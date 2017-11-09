@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trupanion</title>
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="bg_img"></div>
+  <div class="container">
+    <div id="form_wrap">
+      <h2>The perfect plan for every pet.</h2>
+      <h4>We'd love to tell you why: 855.210.8749</h4>
+      <input id="petName" type="text" name="petName" placeholder="Pet Name">
+      <p>
+        <span>Do you have a:</span>
+        <input id="dogSelect" type="radio" name="animalType" value="dog" checked>
+        <label for="dogSelect">Dog</label>
+        <input id="catSelect" type="radio" name="animalType" value="cat">
+        <label for="catSelect">Cat</label>
+      </p>
+      <p>
+        <span>Is your pet: </span>
+        <input type="radio" name="animalGender" value="male" checked>
+        <label for="animalGender">Male</label>
+        <input type="radio" name="animalGender" value="female">
+        <label for="animalGender">Female</label>
+      </p>
+      <select id="petAge" name="ageRange">
+        <option selected hidden disabled value="0">Pet Age</option>
+        <option value="1">0-7 weeks old</option>
+        <option value="2">8 weeks to 12 months old</option>
+        <option value="3">1 year old</option>
+        <option value="4">2 years old</option>
+      </select>
+      <select id="petBreed" name="breed">
+          <!-- dynamic list -->
+      </select>
+      <input id="zip" type="text" name="zipcode" placeholder="Zip Code">
+      <input id="email" type="text" name="email" placeholder="Email">
+      <h5>We will not share your email with anyone, period.</h5>
+      <button>Get my pet's quote &gt;</button>
+    </div>
+  </div>
+  <script src="js.js"></script>
+</body>
+
+</html>
